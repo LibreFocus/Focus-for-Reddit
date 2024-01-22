@@ -1,0 +1,144 @@
+! Frontpage New Reddit (home page, popular, all)
+
+! www.reddit.com##:matches-path(/^/$/) .pdp.sidebar-grid.new.xl\:max-w-\[1524px\].l\:max-w-\[1352px\].xl\:m-auto.l\:m-auto.m\:mx-lg.mx-auto.m\:pl-0.xs\:pr-md.xs\:pl-md.xl\:grid-cols-18.l\:grid-cols-16.m\:grid-cols-14.xs\:grid-cols-\[repeat\(8\,_1fr\)_repeat\(4\,minmax\(67px\,_1fr\)\)\].grid-cols-4.s\:gap-lg.gap-md.grid.theme-rpl.grid-container
+! www.reddit.com##:matches-path(/r/popular/) .pdp.sidebar-grid.new.xl\:max-w-\[1524px\].l\:max-w-\[1352px\].xl\:m-auto.l\:m-auto.m\:mx-lg.mx-auto.m\:pl-0.xs\:pr-md.xs\:pl-md.xl\:grid-cols-18.l\:grid-cols-16.m\:grid-cols-14.xs\:grid-cols-\[repeat\(8\,_1fr\)_repeat\(4\,minmax\(67px\,_1fr\)\)\].grid-cols-4.s\:gap-lg.gap-md.grid.theme-rpl.grid-container
+! www.reddit.com##:matches-path(/r/all/) .xl\:max-w-\[1524px\].l\:max-w-\[1352px\].xl\:m-auto.l\:m-auto.m\:mx-lg.mx-auto.m\:pl-0.xs\:pr-md.xs\:pl-md.xl\:grid-cols-18.l\:grid-cols-16.m\:grid-cols-14.xs\:grid-cols-\[repeat\(8\,_1fr\)_repeat\(4\,minmax\(67px\,_1fr\)\)\].grid-cols-4.s\:gap-lg.gap-md.grid.theme-rpl.grid-container
+
+! Above are procedural using matches-path. But for some reason, even without matches-path, it still works, which is below.
+reddit.com##.pdp.sidebar-grid.new.xl\:max-w-\[1524px\].l\:max-w-\[1352px\].xl\:m-auto.l\:m-auto.m\:mx-lg.mx-auto.m\:pl-0.xs\:pr-md.xs\:pl-md.xl\:grid-cols-18.l\:grid-cols-16.m\:grid-cols-14.xs\:grid-cols-\[repeat\(8\,_1fr\)_repeat\(4\,minmax\(67px\,_1fr\)\)\].grid-cols-4.s\:gap-lg.gap-md.grid.theme-rpl.grid-container
+
+
+! Front Page Old Reddit (homepage, popular, all) - PROCEDURAL
+reddit.com##:matches-path(/^/$/) div.content
+reddit.com##:matches-path(/^/$/) .tabmenu
+reddit.com##:matches-path(/r/popular/) div.content
+reddit.com##:matches-path(/r/popular/) .tabmenu
+reddit.com##:matches-path(/r/all/) div.content
+reddit.com##:matches-path(/r/all/) .tabmenu
+
+
+! Old Reddit - Header Panel (with subreddit names)
+old.reddit.com###sr-header-area
+
+! Old Reddit - Reddit Icon Button in Top Left
+old.reddit.com###header-img
+
+! New Reddit - Reddit Logo icon Top Left
+www.reddit.com###reddit-logo
+
+! New Reddit - Side Panel
+www.reddit.com##.bg-neutral-background.z-\[2\].box-border.flex.flex-col.mt-0.mb-0.pt-xs.xs\:pt-md.shrink-0.s\:shrink.w-full.min-h-screen-without-header.select-none
+
+! Similar reccomended posts on subreddit comments section
+reddit.com##faceplate-tracker > .m-0.p-0.list-none
+reddit.com##pdp-right-rail-tabs
+reddit.com##.block.xs\:px-0.px-md.pdp
+
+! New Reddit - Subreddits PROCEDURAL
+www.reddit.com##:matches-path(/r/AskReddit)#main-content > div:nth-of-type(2)
+
+! Old Reddit - Subreddits
+reddit.com##div[data-subreddit=""]
+reddit.com##div[data-subreddit="AITAH"]
+reddit.com##div[data-subreddit="DIY"]
+reddit.com##div[data-subreddit="Futurology"]
+reddit.com##div[data-subreddit="all"]
+reddit.com##div[data-subreddit="AmItheAsshole"]
+reddit.com##div[data-subreddit="AskReddit"]
+reddit.com##div[data-subreddit="askscience"]
+reddit.com##div[data-subreddit="aww"]
+reddit.com##div[data-subreddit="BeAmazed"]
+reddit.com##div[data-subreddit="BlackPeopleTwitter"]
+reddit.com##div[data-subreddit="books"]
+reddit.com##div[data-subreddit="ChoosingBeggars"]
+reddit.com##div[data-subreddit="comedyheaven"]
+reddit.com##div[data-subreddit="CrappyDesign"]
+reddit.com##div[data-subreddit="creepy"]
+reddit.com##div[data-subreddit="cringetopia"]
+reddit.com##div[data-subreddit="Damnthatsinteresting"]
+reddit.com##div[data-subreddit="dankmemes"]
+reddit.com##div[data-subreddit="Documentaries"]
+reddit.com##div[data-subreddit="europe"]
+reddit.com##div[data-subreddit="food"]
+reddit.com##div[data-subreddit="freefolk"]
+reddit.com##div[data-subreddit="funny"]
+reddit.com##div[data-subreddit="gadgets"]
+reddit.com##div[data-subreddit="gaming"]
+reddit.com##div[data-subreddit="GetMotivated"]
+reddit.com##div[data-subreddit="gifs"]
+reddit.com##div[data-subreddit="history"]
+reddit.com##div[data-subreddit="HistoryMemes"]
+reddit.com##div[data-subreddit="HumansBeingBros"]
+reddit.com##div[data-subreddit="IAmA"]
+reddit.com##div[data-subreddit="iamatotalpieceofshit"]
+reddit.com##div[data-subreddit="insaneparents"]
+reddit.com##div[data-subreddit="insanepeoplefacebook"]
+reddit.com##div[data-subreddit="instant_regret"]
+reddit.com##div[data-subreddit="interestingasfuck"]
+reddit.com##div[data-subreddit="Jokes"]
+reddit.com##div[data-subreddit="JusticeServed"]
+reddit.com##div[data-subreddit="KidsAreFuckingStupid"]
+reddit.com##div[data-subreddit="leagueoflegends"]
+reddit.com##div[data-subreddit="LifeProTips"]
+reddit.com##div[data-subreddit="listentothis"]
+reddit.com##div[data-subreddit="LivestreamFail"]
+reddit.com##div[data-subreddit="me_irl"]
+reddit.com##div[data-subreddit="memes"]
+reddit.com##div[data-subreddit="mildlyinteresting"]
+reddit.com##div[data-subreddit="MovieDetails"]
+reddit.com##div[data-subreddit="movies"]
+reddit.com##div[data-subreddit="MurderedByWords"]
+reddit.com##div[data-subreddit="Music"]
+reddit.com##div[data-subreddit="news"]
+reddit.com##div[data-subreddit="nextfuckinglevel"]
+reddit.com##div[data-subreddit="nosleep"]
+reddit.com##div[data-subreddit="nottheonion"]
+reddit.com##div[data-subreddit="oddlysatisfying"]
+reddit.com##div[data-subreddit="OldSchoolCool"]
+reddit.com##div[data-subreddit="philosophy"]
+reddit.com##div[data-subreddit="photoshopbattles"]
+reddit.com##div[data-subreddit="pics"]
+reddit.com##div[data-subreddit="PoliticalHumor"]
+reddit.com##div[data-subreddit="politics"]
+reddit.com##div[data-subreddit="PublicFreakout"]
+reddit.com##div[data-subreddit="quityourbullshit"]
+reddit.com##div[data-subreddit="relationship_advice"]
+reddit.com##div[data-subreddit="RoastMe"]
+reddit.com##div[data-subreddit="science"]
+reddit.com##div[data-subreddit="Showerthoughts"]
+reddit.com##div[data-subreddit="sports"]
+reddit.com##div[data-subreddit="starterpacks"]
+reddit.com##div[data-subreddit="SubredditDrama"]
+reddit.com##div[data-subreddit="suicidebywords"]
+reddit.com##div[data-subreddit="technology"]
+reddit.com##div[data-subreddit="teenagers"]
+reddit.com##div[data-subreddit="television"]
+reddit.com##div[data-subreddit="tifu"]
+reddit.com##div[data-subreddit="Tinder"]
+reddit.com##div[data-subreddit="todayilearned"]
+reddit.com##div[data-subreddit="trashy"]
+reddit.com##div[data-subreddit="TwoXChromosomes"]
+reddit.com##div[data-subreddit="Unexpected"]
+reddit.com##div[data-subreddit="unpopularopinion"]
+reddit.com##div[data-subreddit="UpliftingNews"]
+reddit.com##div[data-subreddit="videos"]
+reddit.com##div[data-subreddit="WatchPeopleDieInside"]
+reddit.com##div[data-subreddit="Whatcouldgowrong"]
+reddit.com##div[data-subreddit="WhitePeopleTwitter"]
+reddit.com##div[data-subreddit="wholesomememes"]
+reddit.com##div[data-subreddit="worldnews"]
+reddit.com##div[data-subreddit="worldpolitics"]
+reddit.com##div[data-subreddit="WritingPrompts"]
+reddit.com##div[data-subreddit="anime_titties"]
+
+! 2022-12-18 https://news.google.com
+news.google.com##div.EctEBd:nth-of-type(11) > .brSCsc
+news.google.com##div.EctEBd:nth-of-type(10) > .brSCsc
+news.google.com##div.ngKSrb:nth-of-type(5) > .XCcFNb > .i0Zvib
+news.google.com##div.ngKSrb:nth-of-type(6) > .XCcFNb > .i0Zvib
+
+! 2022-12-18 https://finance.yahoo.com
+finance.yahoo.com###finance-overlay-index > div
+||s.yimg.com/bx/adb/20220719165338685.png$image
+finance.yahoo.com##.wafer-rapid-tracked.Mend\(60px\).H\(410px\).Pos\(r\).P\(5px\).W\(472px\).Bgc\(white\).Bdrs\(8px\).Bxsh\(\$subscription-adblckDialogBxsh\).wafer-rapid-module.monalixa-adblock-container.monalixa
+
